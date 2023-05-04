@@ -72,7 +72,8 @@ export default function ModalWindow() {
     },[randomQuestions, getRandomQuestions])
 
   return (
-    <div className='modalBlure' >
+    <div>
+        <div className='modalBlure' ></div>
         <div className='mainModal'>
             <h3>{currText.header}</h3>
             <p>{currText.description}</p>
