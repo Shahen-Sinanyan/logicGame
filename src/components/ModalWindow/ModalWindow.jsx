@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useQuestionsContext } from '../../context/QuestionContext';
+import './style.css'
 
 export default function ModalWindow() {
     const [texts, setTexts] = useState({
@@ -72,9 +73,8 @@ export default function ModalWindow() {
     },[randomQuestions, getRandomQuestions])
 
   return (
-    <div>
-        <div className='modalBlure' ></div>
-        <div className='mainModal'>
+    <div className='"popup_background'>
+        <div className='popup'>
             <h3>{currText.header}</h3>
             <p>{currText.description}</p>
             <p>{currText.points}</p>

@@ -1,0 +1,8 @@
+.background-img {
+    background-image: url("../../image/backgroundimg.png");
+    min-height: 700px;
+    max-width: 1045px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  

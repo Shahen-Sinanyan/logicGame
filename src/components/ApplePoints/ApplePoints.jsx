@@ -18,11 +18,11 @@ export default function ApplePoints() {
   }, [countOfApples]);
 
   return (
-    <div className="appleFrame">
+    <div className="game_header">
       <ul>
         {applesArray.map((item, index) => {
           return <span key={item.id} className={item.state}>{index + 1} {item.state}; </span>;
-        })}
+       })}
       </ul>
     </div>
   );

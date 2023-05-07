@@ -1,0 +1,45 @@
+.question {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .girl {
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+    max-width: 152px;
+  }
+  
+  /* Animation baloon */
+  .baloons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 79px;
+    column-gap: 111px;
+    row-gap: 5px;
+  }
+  .baloons li {
+    list-style: none;
+  }
+  
+  .baloon {
+    width: 127px;
+    height: 127px;
+    background-image: url("../../image/baloon.png");
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  .baloon:nth-child(2) {
+    margin-top: 54px;
+  }
+  
+  .baloon:nth-child(4) {
+    margin-top: 40px;
+  }

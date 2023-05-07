@@ -1,9 +1,11 @@
 import React, { useCallback, useState } from 'react';
 import { useQuestionsContext } from '../../context/QuestionContext';
+import './style.css';
+import girl from '../../image/girl.png'
 
 export default function Question() {
     const {currentQuestion, handleBuble} = useQuestionsContext();
-    const [className, setClassName] = useState('initial-cloud');
+    const [className, setClassName] = useState('baloon');
 
     const handleAnswer = useCallback((e) => {
         e.stopPropagation();
@@ -22,12 +24,16 @@ export default function Question() {
         setTimeout(() => {
             handleBuble(e.target.id)
         },2010)
+        
     },[handleBuble, setClassName]);
 
   return (
-    <div className='questionFrame'>
-        <p>{currentQuestion?.question}</p>
-        <ul className='questionList'>
+    <div className='main-game'>
+         <div class='girl'>
+                <img src={girl} alt='img'/>
+         </div>
+        <p className='question'>{currentQuestion?.question}</p>
+        <ul className='baloons'>
             {currentQuestion?.answers.map((el, index) => {
                 return (
                     <li 
