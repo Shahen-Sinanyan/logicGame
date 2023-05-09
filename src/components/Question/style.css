@@ -5,6 +5,9 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    color: green;
+    font-weight: 600;
+    font-size: 22px;
   }
   .girl {
     position: absolute;
@@ -26,6 +29,12 @@
   }
   .baloons li {
     list-style: none;
+    text-align: center;
+    line-height: 7;
+    color: green;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 100px;
   }
   
   .baloon {
@@ -36,6 +45,20 @@
     background-position: center;
   }
   
+  .baloon1 {
+    width: 127px;
+    height: 127px;
+    background-image: url("../../image/baloon1.png");
+    background-size: 100%;
+    background-position: center;
+  }
+  .baloon2 {
+    width: 127px;
+    height: 127px;
+    background-image: url("../../image/baloon2.png");
+    background-size: 100%;
+    background-position: center;
+  }
   .baloon:nth-child(2) {
     margin-top: 54px;
   }

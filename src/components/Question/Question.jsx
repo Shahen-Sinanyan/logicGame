@@ -10,13 +10,13 @@ export default function Question() {
     const handleAnswer = useCallback((e) => {
         e.stopPropagation();
         setTimeout(() => {
-              e.target.className='cloud1';
+              e.target.className='baloon1';
           }, 500);
         setTimeout(() => {  
-              e.target.className='cloud2';
+              e.target.className='baloon2';
           }, 1000);
         setTimeout(() => {
-              e.target.className='cloud3';
+              e.target.style.display='none';
           }, 1500);
         setTimeout(() => {
               e.target.className='cloud4';
@@ -41,9 +41,9 @@ export default function Question() {
                     id={el.id} 
                     istrue={String(el.isTrue)}
                     onClick={(e) =>handleAnswer(e) }
-                    className={className}
+                    className={"baloon"}
                     >
-                        {el.answer } <h3>{''+ el.istrue}</h3>
+                        {el.answer }
                     </li>
                 )
             })}

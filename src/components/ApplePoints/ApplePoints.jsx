@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useQuestionsContext } from "../../context/QuestionContext";
+import apple1 from '../../image/apple1.png';
+import apple2 from '../../image/apple2.png';
+
+import './style.css';
+
 
 export default function ApplePoints() {
   const [applesArray, setApplesArray] = useState([]);
@@ -19,9 +24,13 @@ export default function ApplePoints() {
 
   return (
     <div className="game_header">
-      <ul>
+      <ul className="appleList">
         {applesArray.map((item, index) => {
-          return <span key={item.id} className={item.state}>{index + 1} {item.state}; </span>;
+          return(
+            <div key={item.id} className={"apple"}>
+              <img className='appleImg' src={item.state === 'red'? apple1: apple2}/>
+            </div>
+          ) 
        })}
       </ul>
     </div>
